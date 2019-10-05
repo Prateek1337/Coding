@@ -1,7 +1,7 @@
 # Coding
 Algothims And Data Structure Implementation
 
-#Added Implmentaions:
+# Added Implementaions:
 
-##Data Stuctures:
+## Data Stuctures:
 1. Segment Tree Recursive.
