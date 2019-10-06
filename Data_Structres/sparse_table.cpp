@@ -6,7 +6,7 @@
 * https://www.spoj.com/problems/RMQSQ/
 * ComputeLogs()
 * buildST(Number of array element)
-* query(l,r)
+* query(l,r),range [l,r] , 0 based indexing
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -40,8 +40,7 @@ void buildST(ll n){
 				st[i][j]=arr[j];
 			}
 			else{
-				st[i][j]=min(st[i-1][j],st[i-1][j+curlen/2]); //dividing interval 
-															  //[l,l+2^k -1]-> [l,l+2^(k-1)-1]+[l+2^(k-1)-1],l+2^k-1]
+				st[i][j]=min(st[i-1][j],st[i-1][j+curlen/2]); 
 			}
 		}
 	}
@@ -50,7 +49,7 @@ void buildST(ll n){
 ll query(ll l,ll r){
 	ll p=lg[r-l+1];
 	ll plen=1<<p;
-	return min(st[p][l],st[p][r-plen+1]); // this can only be applied to idempotent function in O(1)
+	return min(st[p][l],st[p][r-plen+1]); 
 
 }
 
@@ -70,7 +69,6 @@ int main(){
     buildST(n);
     ll q;
     cin>>q;
-    // cout<<st[1][1]<<endl;
     while(q--){
     	ll l,r;
     	cin>>l>>r;
