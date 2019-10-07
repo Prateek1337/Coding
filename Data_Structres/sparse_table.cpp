@@ -27,8 +27,8 @@ ll st[LMAX][MAX];
 
 void computeLogs(){
 	for(ll i=2;i<MAX;++i){
-    	lg[i]=lg[i/2]+1;
-    }
+		lg[i]=lg[i/2]+1;
+	}
 }
 
 
@@ -59,20 +59,20 @@ int main(){
 	// freopen("output.txt", "w", stdout);
 	// #endif
 	ios_base::sync_with_stdio(false); 
-    cin.tie(NULL);
-    ll n;
-    cin>>n;
-    for(ll i=0;i<n;++i){
-    	cin>>arr[i];
-    }
-    computeLogs();
-    buildST(n);
-    ll q;
-    cin>>q;
-    while(q--){
-    	ll l,r;
-    	cin>>l>>r;
-    	cout<<query(l,r)<<endl;
-    }
-    
+	cin.tie(NULL);
+	ll n;
+	cin>>n;
+	for(ll i=0;i<n;++i){
+		cin>>arr[i];
+	}
+	computeLogs();
+	buildST(n);
+	ll q;
+	cin>>q;
+	while(q--){
+		ll l,r;
+		cin>>l>>r;
+		cout<<query(l,r)<<endl;
+	}
+	
 }
