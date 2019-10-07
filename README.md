@@ -1,6 +1,6 @@
 # Added Implementaions:
 
-References:
+References:  
 [https://github.com/ADJA/algos](https://github.com/ADJA/algos)  
 [https://cp-algorithms.com/](https://cp-algorithms.com/)
 
@@ -9,4 +9,4 @@ References:
 2. Sparse Table for RMQ
 
 ## Graph Algorithms:
-1. Floyd-warshall
+1. Floyd-Warshall
