@@ -13,3 +13,4 @@ References:
 
 ## String Algorithms:
 1. Z_function - Calculating the Z-function of the given string in O(n).
+2. Prefix function -O(n), pi[i] is the length of the longest proper prefix of the substring str[0…i] which is also a suffix of this substring str[0…i] O(n).
