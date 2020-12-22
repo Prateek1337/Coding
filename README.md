@@ -10,6 +10,7 @@ References:
 
 ## Graph Algorithms:
 1. Floyd-Warshall - Floyd-Warshall algorithm finding shortest distance between all pairs of vertices in graph in O(n^3).
+2. Kruskal MST - Kruskal  algorithm  for finding Minimum spannig Tree in graph using DSU in O(Mlog(N)).
 
 ## String Algorithms:
 1. Z_function - Calculating the Z-function of the given string in O(n).
